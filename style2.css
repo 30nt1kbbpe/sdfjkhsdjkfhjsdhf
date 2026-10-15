@@ -1,0 +1,77 @@
+
+/* Друга сторінка */
+.telegram-page {
+    min-height: 100vh;
+    background-color: #74c9f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Кнопка повернення */
+.back-button {
+    position: absolute;
+    top: 30px;
+    left: max(20px, calc((100% - 1000px) / 2));
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+}
+
+/* Центральний блок */
+.telegram-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 90px 20px 40px;
+}
+
+.telegram-content h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.telegram-content p {
+    font-size: clamp(16px, 2vw, 22px);
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+/* Велика кнопка Telegram */
+.telegram-button {
+    display: inline-block;
+    padding: 24px 48px;
+    background-color: #229ED9;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: clamp(18px, 2.5vw, 26px);
+    font-weight: bold;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 70, 120, 0.18);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.telegram-button:hover {
+    background-color: #168ac1;
+    transform: translateY(-3px);
+}
+
+/* Телефони */
+@media (max-width: 600px) {
+    .back-button {
+        top: 20px;
+        left: 16px;
+    }
+
+    .telegram-button {
+        width: 100%;
+        max-width: 340px;
+        padding: 22px 16px;
+        text-align: center;
+    }
+}
